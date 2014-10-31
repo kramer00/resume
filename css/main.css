@@ -5,16 +5,21 @@ html, body {
 
 body {
     font-family: "courier new";
-    height: 1200px;
+    height: 100%;
 }
 
 #header {
     background-color: rgb(255,255,255);
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 23%;
     left: 0;
     top: 0;
+}
+
+#header-list {
+    margin:auto;
+    width:100%;
 }
 
 #main-container {
@@ -31,20 +36,12 @@ body {
     padding-top: 20px;
 }
 
-#mail-left {
-    margin-left: 200px;
-}
-
-#home-center {
-    margin-left: 200px;
-}
-
-#phone-right {
-    margin-left: 250px;
-}
-
-#list-center li a {
-    text-decoration: none;
+.align {
+    text-align:center;
+    float:left;
+    margin:auto;
+    width:33.33%;
+    height:1%;
 }
 
 /* above is basic page set up and header/list */
@@ -56,34 +53,40 @@ body {
     margin: auto;
     margin-top:50px;
     padding: 40px;
-    height: 365px;
+    height: 22%;
+}
+
+#summary h3 {
+    text-align:center;
 }
 
 #summary-text {
-    text-indent: 50px;
     text-align: justify;
-    width: 800px;
+    margin:auto;
+    width: 60%;
 }
 
 /* end of the summary text section */
 
 /* start of work text */
 
-#work-container {
-    padding: 35px 150px 35px 150px;
+.work-container {
+    padding: 20px 20px 10px 20px;
     width: 100%;
-    height: 244px;
+    clear:both;
+    height: 12%;
 }
 
 .company {
     display: inline-block;
     float: left;
+    width:13%
 }
 
 .aboutWork {
+    text-align:justify;
     display:table;
-    padding: 0px 5px 0px 0px;
-    width: 615px;
+    width: 75%;
     float: left;
 }
 
@@ -93,7 +96,7 @@ body {
 
 .workDate {
     display: inline-block;
-    width: 138px;
+    width: 11%;
     float: right;
 }
 
@@ -109,27 +112,4 @@ body {
     border-radius: 5px;
 }
 
-.one {
-    margin-left:81px;
-}
-
-.two {
-    margin-left:10px;
-}
-
-.three {
-    margin-left:110px;
-}
-
-.four {
-    margin-left:97px;
-}
-
-.five {
-    margin-left:11px;
-}
-
-.six {
-    margin-left:85px;
-}
 
