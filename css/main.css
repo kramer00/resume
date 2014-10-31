@@ -12,14 +12,13 @@ body {
     background-color: rgb(255,255,255);
     position: fixed;
     width: 100%;
-    height: 15%;
     left: 0;
     top: 0;
 }
 
 #header-list {
-    margin:auto;
-    width:100%;
+    margin: auto;
+    width: 100%;
 }
 
 #main-container {
@@ -37,12 +36,12 @@ body {
 }
 
 .align {
-    text-align:center;
-    padding-top:1%;
-    float:left;
-    margin:auto;
-    width:33.33%;
-    height:1%;
+    text-align: center;
+    padding-top: 1%;
+    float: left;
+    margin: auto;
+    width: 33.33%;
+    height: 1%;
 }
 
 /* above is basic page set up and header/list */
@@ -50,20 +49,20 @@ body {
 /* start of the summary text section */
 
 #summary {
-    display:table;
+    display: table;
     margin: auto;
-    margin-top:50px;
-    padding: 40px;
+    margin-top: 50px;
+    padding: 40px 40px 0 40px;
     height: 22%;
 }
 
 #summary h3 {
-    text-align:center;
+    text-align: center;
 }
 
 #summary-text {
     text-align: justify;
-    margin:auto;
+    margin: auto;
     width: 60%;
 }
 
@@ -71,22 +70,31 @@ body {
 
 /* start of work text */
 
+#theFixed {
+    background-color: #fff;
+    display: inline-block;
+    
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
 .work-container {
     padding: 20px 20px 10px 20px;
     width: 100%;
-    clear:both;
+    clear: both;
     height: 12%;
 }
 
 .company {
     display: inline-block;
     float: left;
-    width:13%
+    width: 13%
 }
 
 .aboutWork {
-    text-align:justify;
-    display:table;
+    text-align: justify;
+    display: table;
     width: 75%;
     float: left;
 }
@@ -113,4 +121,99 @@ body {
     border-radius: 5px;
 }
 
+#work-container {
+    position: relative;
+}
 
+#list-center {
+    padding: 0;
+    margin: 0;
+}
+
+#list-center li {
+    display: inline-block;
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+    margin: auto;
+    font-size:18px;
+}
+
+@media print {
+    #header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #summary-text {
+        width: 90%;
+    }
+
+    .company, .workDate {
+        display: block;
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+
+    .aboutWork {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 18px;
+        text-align:inherit;
+        margin-bottom:20px;
+        padding-bottom:20px;
+        border-bottom:1px solid;
+        
+    }
+
+    .aboutWork h4 {
+        text-align: center;
+    }
+
+    .aboutWork ul {
+        margin: 0 34px;
+        padding: 0;
+    }
+
+    .work-container {
+        padding: 0;
+    }
+
+    #summary {
+        padding-top: 54px;
+        font-size: 18px;
+    }
+    /* im working on fixing my text for phone sizing*/
+    #summary-text {
+        
+    }
+    
+    #summary-text p {
+        
+    }
+    /* see above comment */
+    #list-center li {
+        display: block;
+        width: 100%;
+    }
+
+    .hover:hover {
+        -webkit-box-shadow: 0 0 5px 2px #000;
+        -moz-box-shadow: 0 0 5px 2px #000;
+        box-shadow: 0 0 5px 2px #000;
+        background: #ffffff;
+        border: 1px solid #ababab;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -khtml-border-radius: 5px;
+        border-radius: 5px;
+    }
+    
+    #list-center #home-center {
+        display: none;
+    }
+    
+    
+}
