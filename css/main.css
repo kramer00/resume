@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "courier new";
+    height: 1200px;
+}
+
+#header {
+    background-color: rgb(255,255,255);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+
+#main-container {
+    padding-top: 50px;
+    margin: auto;
+    width: 100%;
+    height: 1900px;
+}
+
+#myName {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#mail-left {
+    margin-left: 200px;
+}
+
+#home-center {
+    margin-left: 200px;
+}
+
+#phone-right {
+    margin-left: 250px;
+}
+
+#list-center li a {
+    text-decoration: none;
+}
+
+/* above is basic page set up and header/list */
+
+/* start of the summary text section */
+
+#summary {
+    display:table;
+    margin: auto;
+    margin-top:50px;
+    padding: 40px;
+    height: 365px;
+}
+
+#summary-text {
+    text-indent: 50px;
+    text-align: justify;
+    width: 800px;
+}
+
+/* end of the summary text section */
+
+/* start of work text */
+
+#work-container {
+    padding: 35px 150px 35px 150px;
+    width: 100%;
+    height: 244px;
+}
+
+.company {
+    display: inline-block;
+    float: left;
+}
+
+.aboutWork {
+    display:table;
+    padding: 0px 5px 0px 0px;
+    width: 615px;
+    float: left;
+}
+
+.aboutWork h4 {
+    text-align: center;
+}
+
+.workDate {
+    display: inline-block;
+    width: 138px;
+    float: right;
+}
+
+.hover:hover {
+    -webkit-box-shadow: 0 0 5px 2px #000;
+    -moz-box-shadow: 0 0 5px 2px #000;
+    box-shadow: 0 0 5px 2px #000;
+    background: #ffffff;
+    border: 1px solid #ababab;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.one {
+    margin-left:81px;
+}
+
+.two {
+    margin-left:10px;
+}
+
+.three {
+    margin-left:110px;
+}
+
+.four {
+    margin-left:97px;
+}
+
+.five {
+    margin-left:11px;
+}
+
+.six {
+    margin-left:85px;
+}
+
