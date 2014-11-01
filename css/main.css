@@ -209,25 +209,4 @@ border-radius: 0px;
     #list-center #home-center {
         display: none;
     }
-    
-        <script>
-        $(function() {
-            var fixedElement = $("#theFixed");
-            var fixedElementPosition = fixedElement.position().top - 130;
-            $(window).scroll(function() {
-                var currentWindowTop = $(this).scrollTop();
-                if(currentWindowTop >= fixedElementPosition && fixedElement.css('position') != 'fixed') {
-                    fixedElement.css('position', 'fixed');
-                } else if(currentWindowTop < fixedElementPosition){
-                    fixedElement.css('position', 'static');
-                }
-            console.log(fixedElementPosition, currentWindowTop);
-            if(fixedElement.css('position') == 'fixed') {
-                fixedElement.css("top", Math.max(114, 440 - currentWindowTop));
-            }
-            
-        });
-        });
-        
-    </script>
 }
