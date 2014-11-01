@@ -73,7 +73,7 @@ body {
 #theFixed {
     background-color: #fff;
     display: inline-block;
-    
+    margin-bottom:5px;
     margin-top: 0;
     text-align: center;
     width: 100%;
@@ -185,35 +185,51 @@ body {
         padding-top: 54px;
         font-size: 18px;
     }
-    /* im working on fixing my text for phone sizing*/
-    #summary-text {
-        
+
+    #summary-text p {
+        text-align:center;
     }
     
-    #summary-text p {
-        
-    }
-    /* see above comment */
     #list-center li {
         display: block;
         width: 100%;
     }
 
     .hover:hover {
-        -webkit-box-shadow: 0 0 5px 2px #000;
-        -moz-box-shadow: 0 0 5px 2px #000;
-        box-shadow: 0 0 5px 2px #000;
-        background: #ffffff;
-        border: 1px solid #ababab;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -khtml-border-radius: 5px;
-        border-radius: 5px;
+
+-webkit-box-shadow: 0 0 0px 0px #fff;
+-moz-box-shadow: 0 0 0px 0px #fff;
+box-shadow: 0 0 0px 0px #fff;
+background: #ffffff;
+border:1px solid #fff;
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+-khtml-border-radius: 0px;
+border-radius: 0px;
     }
     
     #list-center #home-center {
         display: none;
     }
     
-    
+        <script>
+        $(function() {
+            var fixedElement = $("#theFixed");
+            var fixedElementPosition = fixedElement.position().top - 130;
+            $(window).scroll(function() {
+                var currentWindowTop = $(this).scrollTop();
+                if(currentWindowTop >= fixedElementPosition && fixedElement.css('position') != 'fixed') {
+                    fixedElement.css('position', 'fixed');
+                } else if(currentWindowTop < fixedElementPosition){
+                    fixedElement.css('position', 'static');
+                }
+            console.log(fixedElementPosition, currentWindowTop);
+            if(fixedElement.css('position') == 'fixed') {
+                fixedElement.css("top", Math.max(114, 440 - currentWindowTop));
+            }
+            
+        });
+        });
+        
+    </script>
 }
