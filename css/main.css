@@ -147,7 +147,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
     #summary-text {
         width: 90%;
     }
@@ -212,4 +212,21 @@ body {
         display: none;
     }
 }
-/* end of relative sizing css */
+
+/* below is a responsive for IE10 ref:
+ * http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972*/
+
+@viewport {
+zoom:1.0;
+width:device-width;
+}
+
+@viewport {
+zoom:1.0;
+width:extend-to-zoom;
+}
+
+@-ms-viewport {
+width:extend-to-zoom;
+zoom:1.0;
+}
