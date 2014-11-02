@@ -73,7 +73,7 @@ body {
 #theFixed {
     background-color: #fff;
     display: inline-block;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     margin-top: 0;
     text-align: center;
     width: 100%;
@@ -136,8 +136,10 @@ body {
     width: 33%;
     text-align: center;
     margin: auto;
-    font-size:18px;
+    font-size: 18px;
 }
+
+/* below are adjustments for printing and relative sizing */
 
 @media print {
     #header {
@@ -161,10 +163,10 @@ body {
         width: 100%;
         padding: 0 10px;
         font-size: 18px;
-        text-align:inherit;
-        margin-bottom:20px;
-        padding-bottom:20px;
-        border-bottom:1px solid;
+        text-align: inherit;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
     }
 
     .aboutWork h4 {
@@ -186,26 +188,26 @@ body {
     }
 
     #summary-text p {
-        text-align:center;
+        text-align: center;
     }
-    
+
     #list-center li {
         display: block;
         width: 100%;
     }
 
     .hover:hover {
--webkit-box-shadow: 0 0 0px 0px #fff;
--moz-box-shadow: 0 0 0px 0px #fff;
-box-shadow: 0 0 0px 0px #fff;
-background: #ffffff;
-border:1px solid #fff;
--moz-border-radius: 0px;
--webkit-border-radius: 0px;
--khtml-border-radius: 0px;
-border-radius: 0px;
+        -webkit-box-shadow: 0 0 0px 0px #fff;
+        -moz-box-shadow: 0 0 0px 0px #fff;
+        box-shadow: 0 0 0px 0px #fff;
+        background: #ffffff;
+        border: 1px solid #fff;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -khtml-border-radius: 0px;
+        border-radius: 0px;
     }
-    
+
     #list-center #home-center {
         display: none;
     }
