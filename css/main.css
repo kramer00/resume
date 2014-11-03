@@ -200,6 +200,10 @@ body {
         padding-top: 54px;
         font-size: 18px;
     }
+    
+    #summary h3 {
+        margin-top:33px;
+    }
 
     #summary-text p {
         text-align: center;
