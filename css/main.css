@@ -80,7 +80,7 @@ body {
 }
 
 .work-container {
-    padding: 20px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
     width: 100%;
     clear: both;
     height: 12%;
@@ -139,10 +139,24 @@ body {
     font-size: 18px;
 }
 
+/* end of work exp */
+
+/* start of the footer */
+
+#footer p {
+    width:100%;
+    text-align:center;
+    font-size:12px;
+}
+
 /* below are adjustments for printing and relative sizing */
 
 @media print {
     #header {
+        display: none;
+    }
+    
+    #main-container a {
         display: none;
     }
 }
@@ -214,7 +228,7 @@ body {
 }
 
 /* below is a responsive for IE10 ref:
- * http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972*/
+ * http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972
 
 @viewport {
 zoom:1.0;
@@ -230,3 +244,4 @@ width:extend-to-zoom;
 width:extend-to-zoom;
 zoom:1.0;
 }
+*/
