@@ -45,6 +45,7 @@ body {
 #summary {
     display: table;
     margin: auto;
+    font-size:16px;
     margin-top: 50px;
     padding: 40px 40px 0 40px;
     height: 22%;
@@ -249,7 +250,7 @@ zoom:1.0;
 }
 .lf-topic {
     float: left;
-    margin: 0 35px 0 15px;
+    margin: 0 39px 10px 15px;
 }
 #lf-container {
     display: inline-block;
