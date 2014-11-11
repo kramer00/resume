@@ -292,7 +292,9 @@
                     1 Star Drive
                     <br />Laguna Niguel, CA 92677
                 </p>
-                Dave Lydia, Director of Parts &amp; Service</p>
+                <p>
+                    Dave Lydia, Director of Parts &amp; Service
+                </p>
                 <a href="tel:+19493473700">
                     <p>
                         (949) 347-3700
@@ -329,26 +331,7 @@
         </div>
 
     </div>
-    <script>
-        // start of script for Work experience scroll and stop
-        $(function () {
-            var fixedElement = $("#theFixed");
-            var fixedElementPosition = fixedElement.position().top - 130;
-            $(window).scroll(function () {
-                var currentWindowTop = $(this).scrollTop();
-                if (currentWindowTop >= fixedElementPosition && fixedElement.css('position') != 'fixed') {
-                    fixedElement.css('position', 'fixed');
-                } else if (currentWindowTop < fixedElementPosition) {
-                    fixedElement.css('position', 'static');
-                }
-                console.log(fixedElementPosition, currentWindowTop);
-                if (fixedElement.css('position') == 'fixed') {
-                    fixedElement.css("top", Math.max(93, 440 - currentWindowTop));
-                }
-            });
-        });
-         // end of script for work experience scroll and stop
-    </script>
+    <script src="js/myscript.js"></script>
 </body>
 
 </html>
