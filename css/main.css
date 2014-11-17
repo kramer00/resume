@@ -42,15 +42,28 @@ body {
 
 /* start of the summary text section */
 
+#quote {
+    margin-right: 8%;
+    float: right;
+    height: 18%;
+    width: 45%;
+}
+#quote h4 {
+    font-style: italic;
+}
+.float-clear {
+    clear: both;
+}
 #summary {
     display: table;
     margin: auto;
-    font-size:16px;
-    margin-top: 50px;
-    padding: 40px 40px 0 40px;
-    height: 22%;
+    font-size: 16px;
+    margin-top: 61px;
+    padding-top: 40px;
+    height: 25%;
 }
-#summary h3 {
+#summary-title {
+    margin-top: 4%;
     text-align: center;
 }
 #summary-text {
@@ -142,34 +155,42 @@ body {
     }
 }
 /* start of adjustments for relative sizing */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
+    #quote {
+        margin-right: 8%;
+        float: right;
+        height: 18%;
+        width: 58%;
+    }
+}
+@media screen and (max-width: 800px) {
     #summary-text {
         width: 90%;
     }
     #phone-display-remove a {
-        display:none;
+        display: none;
     }
     #lf-list {
-        float:none;
-        margin:auto;
+        float: none;
+        margin: auto;
         text-align: left;
     }
     .lf-topic {
-        float:none;
+        float: none;
     }
     #lf-container {
         display: inline;
         margin: auto;
     }
     .company {
-        margin-top:60px;
+        margin-top: 60px;
         display: block;
         float: none;
         width: auto;
         text-align: center;
     }
     .workDate {
-        margin-top:30px;
+        margin-top: 30px;
         display: block;
         float: none;
         width: auto;
@@ -199,7 +220,7 @@ body {
         padding-top: 54px;
         font-size: 18px;
     }
-    #summary h3 {
+    #summary h2 {
         margin-top: 30px;
     }
     #summary-text p {
@@ -224,35 +245,27 @@ body {
         display: none;
     }
 }
-/* below is a responsive for IE10 ref:
- * http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972
-
-@viewport {
-zoom:1.0;
-width:device-width;
+@media screen and (max-width: 360px) {
+    #myName {
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
 }
-
-@viewport {
-zoom:1.0;
-width:extend-to-zoom;
-}
-
-@-ms-viewport {
-width:extend-to-zoom;
-zoom:1.0;
-}
-*/
-
 #lf-list {
     text-align: center;
-    margin:auto;
+    width: 100%;
+    margin: auto;
     float: left;
 }
 .lf-topic {
     float: left;
-    margin: 0 39px 10px 15px;
+    margin: 0 7% 0% 0%;
 }
 #lf-container {
     display: inline-block;
+    padding-left: 5%;
+    width: 100%;
     margin: auto;
 }
