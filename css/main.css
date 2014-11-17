@@ -165,7 +165,8 @@ body {
 }
 @media screen and (max-width: 800px) {
     #quote {
-        margin-right: 8%;
+        text-align: center;
+        margin-right: 0;
         float: right;
         height: 18%;
         width: 80%;
