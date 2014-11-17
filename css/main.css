@@ -160,10 +160,16 @@ body {
         margin-right: 8%;
         float: right;
         height: 18%;
-        width: 58%;
+        width: 62%;
     }
 }
 @media screen and (max-width: 800px) {
+    #quote {
+        margin-right: 8%;
+        float: right;
+        height: 18%;
+        width: 80%;
+    }
     #summary-text {
         width: 90%;
     }
@@ -222,9 +228,6 @@ body {
     }
     #summary h2 {
         margin-top: 30px;
-    }
-    #summary-text p {
-        text-align: center;
     }
     #list-center li {
         display: block;
