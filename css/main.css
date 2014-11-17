@@ -155,7 +155,7 @@ body {
     }
 }
 /* start of adjustments for relative sizing */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
     #quote {
         margin-right: 8%;
         float: right;
