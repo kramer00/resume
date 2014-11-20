@@ -112,7 +112,7 @@ body {
     -webkit-box-shadow: 0 0 5px 2px #000;
     -moz-box-shadow: 0 0 5px 2px #000;
     box-shadow: 0 0 5px 2px #000;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #ababab;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -148,13 +148,45 @@ body {
 
 @media print {
     #header {
-        display: none;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    #header-list {
+        margin: auto;
+        width: 100%;
+    }
+    #main-container {
+        padding-top: 1%;
+        margin: auto;
+        width: 100%;
+        height: 1900px;
+    }
+    #myName {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    .align {
+        text-align: center;
+        padding-top: 1%;
+        float: left;
+        margin: auto;
+        width: 33.33%;
+        height: 1%;
     }
     #main-container a {
         display: none;
     }
+    a {
+        display:none;
+    }
 }
 /* start of adjustments for relative sizing */
+
 @media screen and (max-width: 1025px) {
     #quote {
         margin-right: 8%;
@@ -237,7 +269,7 @@ body {
         -webkit-box-shadow: 0 0 0px 0px #fff;
         -moz-box-shadow: 0 0 0px 0px #fff;
         box-shadow: 0 0 0px 0px #fff;
-        background: #ffffff;
+        background: #fff;
         border: 1px solid #fff;
         -moz-border-radius: 0px;
         -webkit-border-radius: 0px;
@@ -256,7 +288,7 @@ body {
         padding-top: 20px;
     }
     #summary-text p {
-        text-align:center;
+        text-align: center;
     }
 }
 #lf-list {
